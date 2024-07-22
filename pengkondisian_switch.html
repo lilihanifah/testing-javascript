@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <title>Percabangan switch</title>
+    </head>
+    <body>
+        <script>
+            var hari = prompt("Jadwal masuk karyawan, Input Angka dimulai dari 0 - 6");
+            var masuk = "";
+
+            switch (hari) {
+                case "0":
+                masuk = "Hari Minggu";
+                    break;
+                case "1":
+                masuk = "Hari Senin";
+                    break;
+                case "2":
+                masuk = "Hari Selasa";
+                    break;
+                case "3":
+                masuk = "Hari Rabu";
+                    break;
+                case "4":
+                masuk = "Hari Kamis";
+                    break;
+                case "5":
+                masuk = "Hari Jumat";
+                    break;
+                case "6":
+                masuk = "Hari Sabtu";
+                    break;
+                default:
+                    document.write("OFF DAY");
+            }
+
+            if(masuk === "") {
+                document.write("<h2>Jadwal Anda Off</h2>");
+            }else{
+                document.write("<h2>Jadwal Anda masuk" + " " + masuk + "</h2>");
+            }
+
+        </script>
+    </body>
+</html>

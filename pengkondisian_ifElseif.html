@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Percabangan if/else/if</title>
+    </head>
+    <body>
+        <script>
+            var usia = prompt ("Input Usia Anda saat ini");
+            if(usia >= 17 && usia <= 25) {
+                document.write("Remaja")
+            }else if(usia >= 26 && usia <= 30) {
+                document.write("Dewasa")
+            }else if(usia >= 31 && usia <= 40) {
+                doument.write("Orang Tua")
+            }else if(usia >= 6 && usia <= 17) {
+                document.write("Anak-anak")
+            }else if(usia >= 1 && usia <= 5) {
+                document.write("Balita")
+            }else {
+                document.write("Lansia")
+            }
+
+            document.write(`<p>Saat ini usia Anda: ${usia}</p>`);
+        </script>
+    </body>
+</html>
