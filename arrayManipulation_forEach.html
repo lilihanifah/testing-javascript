@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Manipulation forEach</title>
+    <style>
+        .center-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-text" id="output"></div>
+
+    <script>
+        const array = ["1", "2", "3", "4", "5"];
+
+        array.forEach((item, idx) => {
+            document.getElementById('output').innerHTML += `Index ${idx}, Nilai ${item} <br>`;
+        });
+    </script>
+</body>
+</html>

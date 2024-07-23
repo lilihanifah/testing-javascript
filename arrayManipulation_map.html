@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dialog Alert</title>
+        <title>ArrayManipulation Map</title>
         <style>
             body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                margin: 0;
+                text-align: center;
                 font-size: 24px;
             }
         </style>
     </head>
     <body>
-             <button onClick="alert('Selamat Datang!')">Klik disini</button>
+        <script>
+            const list = [1,2,3,4,5,6];
+
+            const editList = list.map(item => {return item % 3 ;
+            })
+            document.write(editList);
+        </script>
     </body>
 </html>

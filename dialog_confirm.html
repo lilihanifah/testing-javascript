@@ -2,14 +2,25 @@
 <html>
     <head>
         <title>Dialog Confirm</title>
+        <style>
+            .center-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 24px;
+        }
+        </style>
     </head>
     <body>
+        <div class="center-text" id="output"></div>
         <script>
             var yakin = confirm("Apakah yakin akan mengunjungi halaman ini?");
             if(yakin) {
                 window.location = "https://www.programiz.com/javascript/online-compiler/";
             }else {
-                document.write("Tetap disini saja ya");
+                document.getElementById("output").innerHTML += ("Tetap disini saja ya ;)");
             }
         </script>
     </body>

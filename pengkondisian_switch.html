@@ -2,6 +2,16 @@
 <html lang= "en">
     <head>
         <title>Percabangan switch</title>
+        <style>
+            body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 24px;
+        }
+        </style>
     </head>
     <body>
         <script>
@@ -10,32 +20,32 @@
 
             switch (hari) {
                 case "0":
-                masuk = "Hari Minggu";
+                masuk = "<br>Hari Minggu</br>";
                     break;
                 case "1":
-                masuk = "Hari Senin";
+                masuk = "<br>Hari Senin</br>";
                     break;
                 case "2":
-                masuk = "Hari Selasa";
+                masuk = "<br>Hari Selasa</br>";
                     break;
                 case "3":
-                masuk = "Hari Rabu";
+                masuk = "<br>Hari Rabu</br>";
                     break;
                 case "4":
-                masuk = "Hari Kamis";
+                masuk = "<br>Hari Kamis</br>";
                     break;
                 case "5":
-                masuk = "Hari Jumat";
+                masuk = "<br>Hari Jumat</br>";
                     break;
                 case "6":
-                masuk = "Hari Sabtu";
+                masuk = "<br>Hari Sabtu</br>";
                     break;
                 default:
-                    document.write("OFF DAY");
+                    document.write("<br>OFF DAY</br>");
             }
 
             if(masuk === "") {
-                document.write("<h2>Jadwal Anda Off</h2>");
+                document.write("<br>Jadwal Anda Off</br>");
             }else{
                 document.write("<h2>Jadwal Anda masuk" + " " + masuk + "</h2>");
             }

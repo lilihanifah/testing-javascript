@@ -2,25 +2,35 @@
 <html>
     <head>
         <title>Percabangan if/else/if</title>
+        <style>
+            body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 24px;
+        }
+        </style>
     </head>
     <body>
         <script>
             var usia = prompt ("Input Usia Anda saat ini");
             if(usia >= 17 && usia <= 25) {
-                document.write("Remaja")
+                document.write("<br>Remaja</br>")
             }else if(usia >= 26 && usia <= 30) {
-                document.write("Dewasa")
+                document.write("<br>Dewasa</br>")
             }else if(usia >= 31 && usia <= 40) {
-                doument.write("Orang Tua")
+                document.write("<br>Orang Tua</br>")
             }else if(usia >= 6 && usia <= 17) {
-                document.write("Anak-anak")
+                document.write("<br>Anak-anak</br>")
             }else if(usia >= 1 && usia <= 5) {
-                document.write("Balita")
+                document.write("<br>Balita</br>")
             }else {
-                document.write("Lansia")
+                document.write("<br>Lansia</br>")
             }
 
-            document.write(`<p>Saat ini usia Anda: ${usia}</p>`);
+            document.write(`<br>Saat ini usia Anda: ${usia}</br>`);
         </script>
     </body>
 </html>
