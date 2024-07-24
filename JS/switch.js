@@ -1,4 +1,4 @@
-const hari = "7";
+const hari = "5";
 
 switch (hari){
     case "0":
@@ -25,4 +25,20 @@ switch (hari){
     default:
         console.log("Maaf, hanya dapat diinput angka 0-6");
         break;
+}
+
+console.log()
+
+const buah = "paya";
+
+switch (buah){
+    case "apel":
+        console.log("Harga buah apel Rp25.000,00/kg")
+        break;
+    case "paya":
+    case "naga":
+        console.log("Harga buah paya & naga Rp15.000,00/kg")
+        break;
+    default:
+        console.log(`Maaf buah ${buah} yang Anda cari tidak tersedia`)
 }
