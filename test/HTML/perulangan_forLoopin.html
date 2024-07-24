@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perulangan For Loop In</title>
+    </head>
+    <body>
+        <script>
+            var mahasiswa = {nama: "dudung<br>", umur: "30 th<br>", gender: "laki-laki<br>"};
+            var teks = "";
+
+            for(let i in mahasiswa) {
+                teks = teks + mahasiswa[i] +" ";
+            }
+
+            document.write("<p>Biodata siswa:<\p>" + teks + "<br>");
+
+            var nama = {a:1, b:2, c:3};
+
+            for(let p in nama) {
+                document.write(`${p} : ${nama[p]}<br>`)
+            }
+
+
+        </script>
+    </body>
+</html>
