@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Bintang</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_bintang(row){
+
+                for(let i = row; i >= 1; i--){
+                    let bintang = "&nbsp; ".repeat(row - i) + "* ".repeat(i);
+                    document.write(bintang + "<br>")
+                }
+            }
+            bintang_bintang(5);
+        </script>
+    </body>
+</html>
