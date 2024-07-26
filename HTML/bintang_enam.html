@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Enam</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_enam(row){
+
+                for(let i = 1; i<= row; i++){
+                    let enam = "&nbsp; ".repeat(row -i) + "* ".repeat(i);
+                    document.write(enam + "<br>");
+                }
+            }
+            bintang_enam(5);
+        </script>
+    </body>
+</html>

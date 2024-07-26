@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Dua</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_dua(row){
+
+                for(let i = 1; i <= row; i++){
+                    let dua = "";
+                    for(let j = 1; j <= i; j++){
+                        dua += "*"
+                    }
+                    document.write(dua + "<br>");
+                }
+            }
+            bintang_dua(5);
+
+            document.write("<br>");
+
+            function dua(row) {
+    
+            for(let n = row; n >= 0; n--) {
+                let bintang = "*".repeat(row - n);
+                document.write(bintang + "<br>");
+                }
+            }
+            dua(5);
+            
+        </script>
+    </body>
+</html>

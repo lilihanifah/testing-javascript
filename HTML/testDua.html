@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Dua</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            let input = "Tanalin Romeesa."
+            let text = "";
+
+            for(let i = 0; i < input.length; i++){
+                if(input[i-1] === " "){
+                    for(let j = i; j < input.length; j++){
+                        if(input[j] === "."){
+                            break;
+                        }
+                        text += input[j];
+                    }
+                    break;
+                }
+            }
+            document.write(`${text}`)
+        </script>
+    </body>
+</html>

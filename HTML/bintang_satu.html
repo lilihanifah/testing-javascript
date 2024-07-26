@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dialog Prompt</title>
+        <title>Bintang Satu</title>
         <style>
             .center-text {
             display: flex;
@@ -16,8 +16,14 @@
     <body>
         <div class="center-text" id="output"></div>
         <script>
-            var nama = prompt("Tulis Nama disini ya", "");
-            document.getElementById("output").innerHTML += ("<p>Hallo " + nama + "," + " " + "bagaimana kabarmu hari ini?" + "<\p>");
+            function bintang_satu(row){
+
+                for(let i = 1; i <= row; i++){
+                    let satu = "*".repeat(row) ;
+                    document.getElementById("output").innerHTML += (satu + "<br>");
+                }
+            }
+            bintang_satu(5);
         </script>
     </body>
 </html>

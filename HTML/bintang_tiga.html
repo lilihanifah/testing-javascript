@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Tiga</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_tiga(row){
+
+                for(let i = row; i >= 1; i--){
+                    let tiga = "";
+                    for(let n = 1; n <= i; n++){
+                        tiga += "*"
+                    }
+                    document.write(tiga + "<br>");
+                }
+            }
+            bintang_tiga(5);
+
+            document.write("<br>")
+
+            function tiga(row){
+
+                for (let j = 0; j <= row; j++){
+                    let bintang = "*".repeat(row - j);
+                    document.write(bintang + "<br>")
+                }
+            }
+            tiga(5);
+
+        </script>
+    </body>
+</html>

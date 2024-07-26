@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Empat</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_empat(row){
+
+                for(let i = 1; i <= row; i++){
+                    let bintang = "&nbsp; ".repeat(row - i);
+                    let empat = "*".repeat(i);
+                    document.write(bintang + empat + "<br>");
+                }
+            }
+            bintang_empat(5);
+        </script>
+    </body>
+</html>

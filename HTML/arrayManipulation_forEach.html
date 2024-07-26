@@ -17,10 +17,15 @@
     <div class="center-text" id="output"></div>
 
     <script>
-        const array = ["1", "2", "3", "4", "5"];
+        const array = [
+            {nama : "Dudung", usia : 25},
+            {nama : "Maman", usia : 30},
+            {nama : "Dilan",usia :  28},
+            {nama : "Milea", usia : 22}            
+        ];
 
         array.forEach((item, idx) => {
-            document.getElementById('output').innerHTML += `Index ${idx}, Nilai ${item} <br>`;
+            document.getElementById('output').innerHTML += `Nama ${item.nama}, Usia ${item.usia} <br>`;
         });
     </script>
 </body>

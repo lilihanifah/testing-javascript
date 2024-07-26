@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bintang Lima</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            function bintang_lima(row){
+
+                for(let i = row; i >= 1; i--){
+                    let bintang = "&nbsp; ".repeat(row - i);
+                    let lima = "*".repeat(i);
+                    document.write(bintang + lima + "<br>")
+                }
+            }
+            bintang_lima(5);
+        </script>
+    </body>
+</html>

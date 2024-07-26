@@ -16,22 +16,22 @@
     <body>
         <div class="center-text" id="output"></div>
         <script>
-            function hasil(nilai){
-                document.getElementById("output").innerHTML += nilai;
+            function waktu(jam){
+                document.getElementById("output").innerHTML += jam;
             }
 
             let myPromise = new Promise (function(resolve, reject){
-                let i = 88;
-                if(i >= 88){
-                    resolve("Selamat, Anda  Lulus!");
+                let i = 19;
+                if(i >= 18){
+                    resolve("Selamat Sore/Malam");
                 }else{
-                    reject("Mohon maaf, Anda gagal");
+                    reject("Selamat Pagi/Siang");
                 }
             });
 
             myPromise.then(
-                function(value) {hasil(value);},
-                function(error) {hasil(error);}
+                function(value) {waktu(value);},
+                function(error) {waktu(error);}
             );
         </script>
     </body>

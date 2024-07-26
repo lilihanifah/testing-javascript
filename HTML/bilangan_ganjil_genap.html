@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bilangan Ganjil Genap</title>
+    </head>
+    <body>
+        <script>
+            function bilangan_ganjil_genap(row){
+                let bilangan = ["ganjil", "GENAP"];
+                let index = 0;
+
+                for(let i = 1; i <= row; i++){
+                    let baru = bilangan [index % bilangan.length];
+                   document.write(i + " " + baru + "<br>");
+                    index++;
+                }
+            }
+            bilangan_ganjil_genap(20);
+
+            document.write("<br>");
+
+            const pilihan = ["MAJU", "mundur"];
+            const repeatCount = 20;
+
+            for(let n = 0; n < repeatCount; n++){
+                document.write(`${n + 1} ${pilihan[n % pilihan.length]} <br> `);
+            }
+
+        </script>
+    </body>
+</html>

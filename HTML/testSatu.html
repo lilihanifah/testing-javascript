@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Satu</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            let nama = "Ayunda Tika"
+
+            for(let i = 0; i < nama.length; i++){
+                let baru = "";
+                for(j = 0; j < i; j++){
+                    baru += "&nbsp; "
+                }
+                document.write(baru + nama [i] + "<br>")
+            }
+        </script>
+    </body>
+</html>
