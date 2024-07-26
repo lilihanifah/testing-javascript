@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operator Bitwise</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            var x = 10;
+            var y = 5;
+
+            // operator bitwise and &
+            var hasil = x & y;
+            document.write(`${x} & ${y} = ${hasil} <br>`);
+
+            // operator bitwise or |
+            var hasil = x | y;
+            document.write(`${x} | ${y} = ${hasil} <br>`);
+
+            // operator bitwise xor ^
+            var hasil = x ^ y;
+            document.write(`${x} ^ ${y} = ${hasil}<br>`);
+
+            // operator bitwise negasi ~
+            var hasil = ~x;
+            document.write(`~${x} = ${hasil} <br>`);
+
+            // operator bitwise right shift >>
+            var hasil = x >> y;
+            document.write(`${x} >> ${y} = ${hasil}<br>`);
+
+            // operator bitwise left shift <<
+            var hasil = x << y;
+            document.write(`${x} << ${y} = ${hasil} <br>`);
+
+        </script>
+    </body>
+</html>
