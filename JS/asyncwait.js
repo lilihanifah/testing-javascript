@@ -1,7 +1,7 @@
 function sesudahMenunggu(){
     return new Promise((selesai)=>{
         setTimeout(()=>{
-            selesai("Selamat Datang")
+            selesai("SELAMAT DATANG DAN SELAMAT BELAJAR SOBAT")
         },3000);
     });
 }
