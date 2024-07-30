@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>Menghitung Umur</title>
+    <style>
+        body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         font-size: 24px;
+     }
+     .center {
+         text-align: center;
+     }
+     </style>
+</head>
+<body>
+    <script>
+        function hitungUmur(tahunLahir){
+            const tahunSekarang = new Date().getFullYear();
+            return tahunSekarang - tahunLahir;
+        }
+
+        //contoh penggunaan
+        const tahunLahir = 1973;
+        const umur = hitungUmur(tahunLahir);
+        document.write(`Umur: ${umur} tahun`);
+    </script>
+</body>
+</html>

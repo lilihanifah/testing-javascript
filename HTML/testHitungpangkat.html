@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menghitung Pangkat</title>
+        <style>
+            body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-size: 24px;
+         }
+         .center {
+             text-align: center;
+         }
+         </style>
+    </head>
+    <body>
+        <script>
+            var a = 3;
+            var b = 3;
+            var c = 0;
+
+            c = a ** b;
+            document.write(`${a} ** ${b} = ${c}`);
+
+            document.write("<br>");
+
+            function pangkatTiga(number){
+                return number ** 3;
+            }
+
+            //contoh penggunaan
+            const number = 2;
+            const hasil = pangkatTiga(number);
+            document.write(`${number} pangkat 3 adalah ${hasil}`);
+        </script>
+    </body>
+</html>
